@@ -6,8 +6,8 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
-if os.path.exists("RJ"):
-  load_dotenv("RJ")
+if os.path.exists("SHIV"):
+  load_dotenv("SHIV")
 # load_dotenv()
 
 API_ID = int(getenv("API_ID", None))
@@ -27,10 +27,10 @@ SONG_DOWNLOAD_DURATION = int(
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Romeo-musicBot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Shiv-musicBot")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", None).split())
+    map(int, getenv("OWNER_ID", "5505030156").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -46,9 +46,9 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/ROMEO_OP")
+    "SUPPORT_CHANNEL", "https://t.me/do_dil_ek_jaan143")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/ROMEOBOT_OP")
+    "SUPPORT_GROUP", "https://t.me/RONNY_KI_DUNIYA")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -64,10 +64,10 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "6"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://telegra.ph/file/f84d28d91512a445ecce1.mp4")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://telegra.ph/file/9584b19633bf5b31faa12.mp4")
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "7c3bcc508cf841d0923869cbbfde478d")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "1c30d5e00cf64a70b8be2f6064ef90a5")
 
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "5"))
 
@@ -106,11 +106,11 @@ clean = {}
 
 autoclean = []
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/e745fdaf1966f228582dc.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/9584b19633bf5b31faa12.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/e745fdaf1966f228582dc.jpg",
+    "https://telegra.ph/file/9584b19633bf5b31faa12.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
